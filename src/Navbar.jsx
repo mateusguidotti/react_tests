@@ -21,7 +21,17 @@ function Navbar(){
                     </li>
                </ul>
                
-               <button className='cta-button'>Compre Agora</button>
+               <div className="cta-section">
+                    <img src={logo} alt="logo" className='cta-image'/>
+                    <button className='cta-button'>Compre Agora</button>
+
+               </div>
+
+               <div className="burguer-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+               </div>
           </div>
      )
 }

@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="pagina-teste">
       <Navbar />
-      <ProductSection/>
+      {/* <ProductSection/> */}
     </div>
   );
 }

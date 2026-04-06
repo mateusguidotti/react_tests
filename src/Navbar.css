@@ -28,6 +28,13 @@
      transition: 200ms;
 }
 
+/* CTA SECTION */
+
+.cta-section{
+     display: flex;
+     gap: 20px;
+}
+
 .cta-button{
      background-color: var(--brand-color);
      border: none;
@@ -39,6 +46,19 @@
      cursor: pointer;
 }
 
+.burguer-menu{
+     display: none;
+     flex-direction: column;
+     gap: 5px;
+     cursor: pointer;
+}
+
+.burguer-menu span{
+     width: 25px;
+     height: 3px;
+     background-color: white;
+     border-radius: 2px;
+}
 /* HOVERS */
 
 .nav-list a:hover{
@@ -47,4 +67,14 @@
 
 .cta-button:hover{
      scale: 1.03;
+}
+
+@media (max-width: 768px){
+     .nav-list, .cta-section{
+          display: none;
+     }
+
+     .burguer-menu{
+          display: flex;
+     }
 }
