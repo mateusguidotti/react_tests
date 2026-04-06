@@ -1,5 +1,6 @@
 import './Navbar.css'
-import logo from './assets/react.svg'
+import logo from './assets/logo.png'
+import instagramIcon from './assets/instagram.svg'
 import { useState } from 'react'
 
 function Navbar() {
@@ -9,6 +10,11 @@ function Navbar() {
           setMenuAberto(!menuAberto);
      }
 
+     const instagramLink = "https://www.instagram.com/oldschool.pizzas/"
+
+     const direcionaInstagram = () => {
+          window.open(instagramLink)
+     }
 
      return (
           <div className="nav">
@@ -30,7 +36,7 @@ function Navbar() {
                </ul>
 
                <div className="cta-section">
-                    <img src={logo} alt="logo" className='cta-image' />
+                    <img src={instagramIcon} alt="logo" className='cta-image' onClick={direcionaInstagram}/>
                     <button className='cta-button'>Compre Agora</button>
 
                </div>
@@ -60,7 +66,7 @@ function Navbar() {
                     <span></span>
 
                     <div className="cta-section-mobile">
-                         <img src={logo} alt="logo" className='cta-image' />
+                         <img src={instagramIcon} alt="logo" className='cta-image' onClick={direcionaInstagram}/>
                          <button className='cta-button'>Compre Agora</button>
                     </div>
                </div>

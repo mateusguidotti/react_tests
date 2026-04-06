@@ -3,13 +3,13 @@
 import './App.css'; 
 // 1. O IMPORT: Estamos a "puxar" a peça de Lego que criámos no outro ficheiro.
 import Navbar from './Navbar';
-import ProductSection from './ProductSection';
+import Hero from './Hero';
 
 function App() {
   return (
     <div className="pagina-teste">
       <Navbar />
-      {/* <ProductSection/> */}
+      <Hero/>
     </div>
   );
 }
