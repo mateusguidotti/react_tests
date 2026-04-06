@@ -1,12 +1,15 @@
 :root{
      --brand-color: #cf6b0e;
+     --background-color: #1f1f1f;
 }
 
 .nav{
      width: 100%;
      height: 10dvh;
-     background-color: #1f1f1f;
+     background-color: var(--background-color);
      display: flex;
+     position: fixed;
+     top: 0;
      align-items: center;
      justify-content: space-between;
      padding: 0 50px;
@@ -30,7 +33,7 @@
 
 /* CTA SECTION */
 
-.cta-section{
+.cta-section, .cta-section-mobile{
      display: flex;
      gap: 20px;
 }
@@ -46,6 +49,10 @@
      cursor: pointer;
 }
 
+.cta-image{
+     width: 35px;
+}
+
 .burguer-menu{
      display: none;
      flex-direction: column;
@@ -59,6 +66,48 @@
      background-color: white;
      border-radius: 2px;
 }
+
+/* MOBILE MODAL */
+ 
+.modal-mobile{
+     display: none;
+     position: fixed;
+     top: 10dvh;
+     left: 0;
+     background-color: var(--background-color);
+     width: 100%;
+}
+
+.modal-mobile ul{
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.modal-mobile ul li a{
+     text-decoration: none;
+     color: #fff;
+     font-weight: bold;
+}
+
+.modal-mobile span{
+     width: 100%;
+     height: 1px;
+     background-color: #bdbdbd;
+}
+
+.aberto{
+     display: none;
+     flex-direction: column;
+     padding: 20px;
+     gap: 20px;
+}
+
+.cta-section-mobile .cta-button{
+     width: 100%;
+}
+
 /* HOVERS */
 
 .nav-list a:hover{
@@ -75,6 +124,14 @@
      }
 
      .burguer-menu{
+          display: flex;
+     }
+
+     .mobile-menu{
+          display: flex;
+     }
+
+     .aberto{
           display: flex;
      }
 }
