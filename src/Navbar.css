@@ -122,6 +122,10 @@
 }
 
 @media (max-width: 768px){
+     .nav{
+          padding: 0 30px;
+     }
+
      .nav-list, .cta-section{
           display: none;
      }

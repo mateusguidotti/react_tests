@@ -1,5 +1,5 @@
 import './Navbar.css'
-import logo from './assets/logo.png'
+import logo from '/logo.webp'
 import instagramIcon from './assets/instagram.svg'
 import { useState } from 'react'
 
