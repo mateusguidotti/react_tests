@@ -6,6 +6,7 @@
 
 .hero {
      position: relative;
+     background-color: #0d0903;
      background-image: url("/bg.webp");
      width: 100%;
      min-height: 90dvh;
